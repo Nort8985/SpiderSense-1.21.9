@@ -1,0 +1,3 @@
+/time set night
+/gamemode survival
+/time set night

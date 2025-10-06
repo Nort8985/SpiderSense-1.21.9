@@ -1,0 +1,26 @@
+{
+  "mappings": {
+    "com/nort8985/spidersense/mixin/ClientPlayerEntityMixin": {
+      "tick": "Lnet/minecraft/class_746;method_5773()V"
+    },
+    "com/nort8985/spidersense/mixin/MinecraftClientMixin": {
+      "hasOutline": "Lnet/minecraft/class_310;method_27022(Lnet/minecraft/class_1297;)Z"
+    },
+    "com/nort8985/spidersense/mixin/ServerPlayerEntityMixin": {
+      "tick": "Lnet/minecraft/class_3222;method_5773()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/nort8985/spidersense/mixin/ClientPlayerEntityMixin": {
+        "tick": "Lnet/minecraft/class_746;method_5773()V"
+      },
+      "com/nort8985/spidersense/mixin/MinecraftClientMixin": {
+        "hasOutline": "Lnet/minecraft/class_310;method_27022(Lnet/minecraft/class_1297;)Z"
+      },
+      "com/nort8985/spidersense/mixin/ServerPlayerEntityMixin": {
+        "tick": "Lnet/minecraft/class_3222;method_5773()V"
+      }
+    }
+  }
+}

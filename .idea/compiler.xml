@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="21" />
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-AoutRefMapFile=C:\Users\Nort8985\IdeaProjects\SpiderSense-1.21.9\build\classes\java\main\SpiderSense-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=C:\Users\Nort8985\IdeaProjects\SpiderSense-1.21.9\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_9.1.21.9+build.1-v2.main.tiny -AinMapFileNamedIntermediary=C:\Users\Nort8985\.gradle\caches\fabric-loom\1.21.9\net.fabricmc.yarn.1_21_9.1.21.9+build.1-v2\mappings.tiny" />
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="MonstersInTheCloset-1.0.3-1.21.9.test" options="-AoutRefMapFile=C:\Users\Nort8985\IdeaProjects\MonstersInTheCloset-1.0.3-1.21.9\build\classes\java\test\test-SpiderSense-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=C:\Users\Nort8985\IdeaProjects\MonstersInTheCloset-1.0.3-1.21.9\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_9.1.21.9+build.1-v2.test.tiny -AinMapFileNamedIntermediary=C:\Users\Nort8985\.gradle\caches\fabric-loom\1.21.9\net.fabricmc.yarn.1_21_9.1.21.9+build.1-v2\mappings.tiny" />
+      <module name="SpiderSense-1.21.9.test" options="-AoutRefMapFile=C:\Users\Nort8985\IdeaProjects\SpiderSense-1.21.9\build\classes\java\test\test-SpiderSense-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=C:\Users\Nort8985\IdeaProjects\SpiderSense-1.21.9\build\loom-cache\mixin-map-net.fabricmc.yarn.1_21_9.1.21.9+build.1-v2.test.tiny -AinMapFileNamedIntermediary=C:\Users\Nort8985\.gradle\caches\fabric-loom\1.21.9\net.fabricmc.yarn.1_21_9.1.21.9+build.1-v2\mappings.tiny" />
+    </option>
+  </component>
+</project>
