@@ -6,7 +6,7 @@ A Minecraft Fabric mod that enhances your awareness by highlighting hostile mobs
 
 ### Features
 
-- **Continuous Surveillance**: No need to interact with beds - highlighting works constantly while you're in survival mode
+- **Continuous Surveillance**: Highlighting works constantly while you're in survival mode
 - **Intuitive Outlines**: Hostile mobs and slimes that can see you are outlined on the client side for easy identification
 - **Visual Glow**: Mobs receive a glowing effect on the server side, making them stand out even in darkness
 - **Survival Mode Only**: Mod only activates in survival mode, so creative/building won't be disturbed
@@ -52,7 +52,7 @@ The built .jar will be in `build/libs/`.
 
 ### Функции
 
-- **Постоянное наблюдение**: Не нужно взаимодействовать с кроватями - выделение работает постоянно в режиме выживания
+- **Постоянное наблюдение**: Выделение работает постоянно в режиме выживания
 - **Интуитивные контуры**: Враждебные мобы и слизи, которые вас видят, обведены контуром на стороне клиента для легкого распознавания
 - **Визуальное свечение**: Мобы получают эффект свечения на стороне сервера, что делает их заметными даже в темноте
 - **Только режим выживания**: Мод активируется только в режиме выживания, так что творческий/строительство не будет потревожено
@@ -94,24 +94,16 @@ cd SpiderSense-1.21.9
 
 Собранный .jar будет в `build/libs/`.
 
-## Авторы
+## Автор
 
-- **Автор**: Nort8985
-- **Оригинальная идея**: Основано на моде "Monsters in the Closet" от Minenash
+- **Nort8985**
 - **Лицензия**: MIT License
 
 ## Вклад
 
 Не стесняйтесь открывать issues или pull requests, если у вас есть предложения или вы нашли баги!
 
-## Журнал изменений
+## Changelog
 
 ### v1.0.5
-- Полная переделка: Изменено на постоянное выделение (не основанное на кроватях)
-- Добавлена поддержка слизей
-- Переименовано в SpiderSense
-- Убраны требования взаимодействия с кроватями
-- Ограничение режима выживания
-
-### v1.0.3
-- Начальная версия
+- Initial version
