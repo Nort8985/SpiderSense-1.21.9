@@ -106,4 +106,4 @@ cd SpiderSense-1.21.9
 ## Changelog
 
 ### v1.0.5
-- Initial version
+- Updated in version 1.21.9
