@@ -32,7 +32,7 @@ public abstract class ServerPlayerEntityMixin extends Entity {
         World world = player.getEntityWorld();
         if (world != null && player.getGameMode() == GameMode.SURVIVAL) {
             var pos = new Vec3d(player.getX(), player.getY(), player.getZ());
-            var entities = world.getEntitiesByClass(MobEntity.class, new Box(pos.getX() - 20, pos.getY() - 10, pos.getZ() - 20, pos.getX() + 20, pos.getY() + 10, pos.getZ() + 20), e -> (e instanceof HostileEntity && ((HostileEntity) e).canSee(player)) || (e instanceof SlimeEntity && e.canSee(player)));
+            var entities = world.getEntitiesByClass(MobEntity.class, new Box(pos.getX() - 16, pos.getY() - 8, pos.getZ() - 16, pos.getX() + 16, pos.getY() + 8, pos.getZ() + 16), e -> (e instanceof HostileEntity && ((HostileEntity) e).canSee(player)) || (e instanceof SlimeEntity && e.canSee(player)));
             for (MobEntity entity : entities) entity.addStatusEffect(new StatusEffectInstance(StatusEffects.GLOWING, 1200));
         }
     }
