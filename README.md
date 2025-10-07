@@ -10,7 +10,7 @@ A Minecraft Fabric mod that enhances your awareness by highlighting hostile mobs
 - **Intuitive Outlines**: Hostile mobs and slimes that can see you are outlined on the client side for easy identification
 - **Visual Glow**: Mobs receive a glowing effect on the server side, making them stand out even in darkness
 - **Survival Mode Only**: Mod only activates in survival mode, so creative/building won't be disturbed
-- **Range Adaptive**: Detects mobs within an 8-block radius around your position
+- **Range Adaptive**: Detects mobs within a 20-block radius around your position
 
 ### How It Works
 
@@ -56,7 +56,7 @@ The built .jar will be in `build/libs/`.
 - **Интуитивные контуры**: Враждебные мобы и слизи, которые вас видят, обведены контуром на стороне клиента для легкого распознавания
 - **Визуальное свечение**: Мобы получают эффект свечения на стороне сервера, что делает их заметными даже в темноте
 - **Только режим выживания**: Мод активируется только в режиме выживания, так что творческий/строительство не будет потревожено
-- **Адаптивный диапазон**: Обнаруживает мобов в радиусе 8 блоков вокруг вашей позиции
+- **Адаптивный диапазон**: Обнаруживает мобов в радиусе 20 блоков вокруг вашей позиции
 
 ### Как это работает
 
@@ -104,6 +104,9 @@ cd SpiderSense-1.21.9
 Не стесняйтесь открывать issues или pull requests, если у вас есть предложения или вы нашли баги!
 
 ## Changelog
+
+### v1.0.6
+- Changed detection radius to 16 blocks
 
 ### v1.0.5
 - Updated in version 1.21.9
