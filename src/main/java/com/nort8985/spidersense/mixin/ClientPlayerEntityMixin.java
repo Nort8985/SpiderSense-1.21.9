@@ -36,7 +36,7 @@ public class ClientPlayerEntityMixin {
         World world = client.world;
         if (world != null && client.interactionManager.getCurrentGameMode() == GameMode.SURVIVAL) {
             var pos = new Vec3d(player.getX(), player.getY(), player.getZ());
-            var entities = world.getEntitiesByClass(MobEntity.class, new Box(pos.getX() - 8, pos.getY() - 5, pos.getZ() - 8, pos.getX() + 8, pos.getY() + 5, pos.getZ() + 8), e -> (e instanceof HostileEntity && ((HostileEntity) e).canSee(player)) || (e instanceof SlimeEntity && e.canSee(player)));
+            var entities = world.getEntitiesByClass(MobEntity.class, new Box(pos.getX() - 20, pos.getY() - 10, pos.getZ() - 20, pos.getX() + 20, pos.getY() + 10, pos.getZ() + 20), e -> (e instanceof HostileEntity && ((HostileEntity) e).canSee(player)) || (e instanceof SlimeEntity && e.canSee(player)));
             if (!entities.isEmpty()) {
                 MonsterHighlighter.duration = 20;
                 MonsterHighlighter.list = entities;
