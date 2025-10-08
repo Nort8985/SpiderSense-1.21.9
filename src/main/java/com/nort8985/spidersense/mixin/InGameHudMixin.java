@@ -24,7 +24,8 @@ public class InGameHudMixin {
     @Inject(method = "render", at = @At("TAIL"))
     void renderMonsterOverlay(DrawContext context, RenderTickCounter tickCounter, CallbackInfo ci) {
         if (client.player != null && client.interactionManager.getCurrentGameMode().isSurvivalLike() && MonsterHighlighter.closestMob != null) {
-            String text = "Monster (" + String.format("%.0f", MonsterHighlighter.closestDistance) + "m)";
+            String mobName = MonsterHighlighter.closestMob.getType().getName().getString();
+            String text = mobName + " (" + String.format("%.0f", MonsterHighlighter.closestDistance) + "m)";
 
             TextRenderer textRenderer = client.textRenderer;
             int screenWidth = client.getWindow().getScaledWidth();
