@@ -31,15 +31,30 @@ public class ClientPlayerEntityMixin {
         if (MonsterHighlighter.duration <= 0) {
             MonsterHighlighter.list = new ArrayList<>();
             MonsterHighlighter.duration = -1;
+            MonsterHighlighter.closestMob = null;
+            MonsterHighlighter.closestDistance = Double.MAX_VALUE;
         } else MonsterHighlighter.duration--;
 
         World world = client.world;
         if (world != null && client.interactionManager.getCurrentGameMode() == GameMode.SURVIVAL) {
             var pos = new Vec3d(player.getX(), player.getY(), player.getZ());
-            var entities = world.getEntitiesByClass(MobEntity.class, new Box(pos.getX() - 16, pos.getY() - 8, pos.getZ() - 16, pos.getX() + 16, pos.getY() + 8, pos.getZ() + 16), e -> (e instanceof HostileEntity && ((HostileEntity) e).canSee(player)) || (e instanceof SlimeEntity && e.canSee(player)));
+            List<MobEntity> entities = world.getEntitiesByClass(MobEntity.class, new Box(pos.getX() - 16, pos.getY() - 8, pos.getZ() - 16, pos.getX() + 16, pos.getY() + 8, pos.getZ() + 16), e -> (e instanceof HostileEntity && ((HostileEntity) e).canSee(player)) || (e instanceof SlimeEntity && e.canSee(player)));
             if (!entities.isEmpty()) {
                 MonsterHighlighter.duration = 20;
                 MonsterHighlighter.list = entities;
+
+                // Find closest mob
+                MobEntity closest = null;
+                double minDist = Double.MAX_VALUE;
+                for (MobEntity ent : entities) {
+                    double dist = pos.distanceTo(new Vec3d(ent.getX(), ent.getY(), ent.getZ()));
+                    if (dist < minDist) {
+                        minDist = dist;
+                        closest = ent;
+                    }
+                }
+                MonsterHighlighter.closestMob = closest;
+                MonsterHighlighter.closestDistance = minDist;
             }
         }
     }

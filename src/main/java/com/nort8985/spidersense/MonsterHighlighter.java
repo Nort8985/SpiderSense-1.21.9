@@ -7,4 +7,6 @@ import java.util.List;
 public class MonsterHighlighter {
     public static int duration = -1;
     public static List<MobEntity> list = new ArrayList<>();
+    public static MobEntity closestMob = null;
+    public static double closestDistance = Double.MAX_VALUE;
 }
